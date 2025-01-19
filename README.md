@@ -45,11 +45,9 @@ Steps undertaken to ensure high-quality data:
    - Identified missing entries in video metrics and metadata columns.
    - Imputed numerical missing values using mean or median imputation.
    - Removed rows with excessive missing information when imputation was not feasible.
-   - ![Missing Data Bar Chart](missing_data_chart.png)
 2. **Outlier Management:**
    - Detected outliers in metrics like views, likes, and shares using IQR and Z-scores.
    - Capped or transformed extreme values to minimize their influence.
-   - ![Boxplot of Engagement Metrics](engagement_boxplot.png)
 3. **Data Type Standardization:**
    - Ensured consistency in numerical data types (e.g., converting float to integers for counts).
    - Standardized date formats for potential temporal analyses.
@@ -77,23 +75,18 @@ Steps undertaken to ensure high-quality data:
 1. **Exploratory Data Analysis (EDA):**
    - Computed descriptive statistics for all metrics to understand central tendencies and variability.
    - Created distribution plots to analyze data spread and identify skewness in metrics.
-   - Developed heatmaps to visualize correlations among metrics such as views, likes, shares, and comments.
-     ![Correlation Heatmap](correlation_heatmap.png)
    - Explored the impact of verification status and ban status on engagement metrics using boxplots.
 2. **Trend Analysis:**
    - Examined temporal patterns in video engagement by grouping data by posting times and dates.
    - Analyzed seasonal trends to determine optimal posting schedules.
-     ![Line Graph of Temporal Trends](temporal_trends.png)
 3. **Engagement Factor Analysis:**
    - Used pairwise scatterplots to examine relationships between views, likes, and shares.
-     ![Scatter Plot: Likes vs Shares](likes_vs_shares.png)
    - Performed clustering to segment videos based on engagement patterns.
 4. **Hypothesis Testing:**
    - Conducted t-tests to evaluate differences in engagement between verified and non-verified accounts.
    - Used ANOVA to analyze the influence of video duration on user interaction metrics.
 5. **Text Analysis:**
    - Performed word frequency analysis on transcription text to identify popular topics and phrases.
-     ![Word Cloud](word_cloud.png)
    - Applied sentiment analysis to determine the tone of content and its impact on performance.
 6. **Predictive Modeling:**
    - Developed machine learning models, including Decision Trees, Random Forest, and Gradient Boosting, to predict engagement metrics.
@@ -114,7 +107,6 @@ Steps undertaken to ensure high-quality data:
 - **Verification Status:**
    - Verified accounts showed a 30% higher engagement rate compared to non-verified accounts.
    - They also demonstrated a stronger correlation between likes and shares.
-   - ![Pie Chart: Verified vs Non-Verified](verified_vs_non_verified.png)
 - **Video Duration:**
    - Videos between 15-30 seconds performed significantly better in terms of user retention and interaction.
    - Longer videos (>60 seconds) had diminishing returns on engagement metrics.
